@@ -16,7 +16,7 @@
     <string name="clear">CLR</string>
     <string name="copy">COPY</string>
     <string name="copyMsg">Copied output window contents to clipboard</string>
-    <string name="help">LEGAL</string>
+    <string name="help">ABOUT</string>
     <string name="optionparams">OptionParams</string>
     <string name="mcsim">mcSim</string>
     <string name="vanilla">Vanilla</string>
@@ -26,6 +26,10 @@
     <string name="volatility">Volatility</string>
 <string name="license_content">
 \n
+\nLambdaMC - a demo Haskell Android app to calculate option prices by Monte Carlo simulation.
+\n
+\nWeb: https://github.com/amulcahy/LambdaMC
+\n
 \nLambdaMC links to the following Haskell packages:
 \n
 </string>
@@ -34,7 +38,7 @@
 \n
 \nWeb: https://github.com/amulcahy/LambdaMC
 \n
-\nLambdaMC depends on and links to the following Haskell packages:
+\nLambdaMC links to the following Haskell packages:
 \n
 \nname:      base
 \nlicense:   BSD3 (see below)
