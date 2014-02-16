@@ -1,0 +1,22 @@
+name: LambdaMC
+version: 0.1.0
+-- synopsis:
+-- description:
+license: MIT
+-- license-file: LICENSE
+author: Anthony Mulcahy
+maintainer: borzoi@dragongate-technologies.com
+-- copyright:
+-- category:
+build-type: Simple
+cabal-version: >=1.8
+
+executable libhaskell.so
+  build-depends: base, text, transformers, foreign-jni, mtl, time, deepseq
+  hs-source-dirs: src
+  ghc-options: -optl-shared -no-hs-main -threaded
+  main-is: LambdaMC.hs
+  c-sources: src/init.c
+  include-dirs: src
+  cc-options: -shared
+  ld-options: -shared

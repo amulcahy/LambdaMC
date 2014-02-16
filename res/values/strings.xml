@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LambdaMC</string>
+    <string name="dialog_name">Running Monte Carlo Simulation</string>
+    <string-array name="OptionType">
+        <item >EuroPut</item>
+        <item >EuroCall</item>
+        <item >AsianPut</item>
+        <item >AsianCall</item>
+    </string-array>
+    <string-array name="StochasticProcess">
+        <item >Gaussian</item>
+        <item >GaussianAntithetic</item>
+    </string-array>
+    <string name="start">START</string>
+    <string name="clear">CLR</string>
+    <string name="copy">COPY</string>
+    <string name="copyMsg">Copied output window contents to clipboard</string>
+    <string name="help">LEGAL</string>
+    <string name="optionparams">OptionParams</string>
+    <string name="mcsim">mcSim</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="gaussian">Gaussian</string>
+    <string name="gaussianantithetic">GaussianAntithetic</string>
+    <string name="rate">Rate</string>
+    <string name="volatility">Volatility</string>
+<string name="license_content">
+\n
+\nLambdaMC links to the following Haskell packages:
+\n
+</string>
+<string name="help_content">
+\nLambdaMC - a demo Haskell Android app to calculate option prices by Monte Carlo simulation.
+\n
+\nWeb: https://github.com/amulcahy/LambdaMC
+\n
+\nLambdaMC depends on and links to the following Haskell packages:
+\n
+\nname:      base
+\nlicense:   BSD3 (see below)
+\ncopyright: (c) The University of Glasgow 2001, (c) Lennart Augustsson, 2004-2008
+\n
+\nname:      deepseq
+\nlicense:   BSD3 (see below)
+\ncopyright: (c) The University of Glasgow 2001-2009
+\n
+\nname:      foreign-jni
+\nlicense:   BSD3 (see below)
+\ncopyright: 2013 C. J. van den Berg
+\n
+\nname:      mtl
+\nlicense:   BSD3 (see below)
+\ncopyright: (c) Andy Gill 2001, (c) Oregon Graduate Institute of Science and Technology, 2001
+\n
+\nname:      text
+\nlicense:   BSD3 (see below)
+\ncopyright: 2009-2011 Bryan O\&apos;Sullivan, 2008-2009 Tom Harper
+\n
+\nname:      time
+\nlicense:   BSD3 (see below)
+\ncopyright: (c) Ashley Yakeley, 2004-2010.
+\n
+\nname:      transformers
+\nlicense:   BSD3 (see below)
+\ncopyright: (c) 2009, 2010, 2011 Bryan O\&apos;Sullivan, (c) 2009 Duncan Coutts, (c) 2008, 2009 Tom Harper
+\n
+\n*** todo add full licenses here ****
+\n
+</string>
+
+</resources>

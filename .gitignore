@@ -1,0 +1,10 @@
+*~
+*.out
+*.cabal
+/bin
+/gen
+/libs
+/obj
+/jni/x86
+/jni/armeabi
+/private_work

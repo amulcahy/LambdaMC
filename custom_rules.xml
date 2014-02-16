@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LambdaMC_custom_rules" default="help">
+
+  <target name="-pre-compile" >
+    <uptodate property="cabal-armeabi-configure.notRequired"
+              targetfile="obj/local/armeabi/setup-config" >
+      <srcfiles dir="." includes="*.cabal"/>
+    </uptodate>
+  </target>
+
+  <target name="cabal-armeabi-configure" unless="cabal-armeabi-configure.notRequired">
+    <exec executable="arm-linux-androideabi-cabal" failonerror="true">
+      <arg value="configure" />
+      <arg value="--builddir=obj/local/armeabi" />
+    </exec>
+  </target>
+
+  <target name="-post-compile" depends="cabal-armeabi-configure">
+
+    <exec executable="arm-linux-androideabi-cabal" failonerror="true">
+      <arg value="build" />
+      <arg value="--verbose" />
+      <arg value="--builddir=obj/local/armeabi" />
+    </exec>
+
+    <exec executable="${ndk.dir}/ndk-build" failonerror="true"/>
+  </target>
+
+  <target name="clean" depends="android_rules.clean">
+
+    <exec executable="${ndk.dir}/ndk-build" failonerror="true">
+      <arg value="clean"/>
+    </exec>
+
+    <exec executable="arm-linux-androideabi-cabal" failonerror="true">
+      <arg value="clean" />
+      <arg value="--builddir=obj/local/armeabi" />
+    </exec>
+
+    <exec executable="rm" failonerror="true">
+      <arg value="a.out" />
+      <arg value="LambdaMC.cabal" />
+    </exec>
+
+    <exec executable="rmdir" failonerror="true">
+      <arg value="libs/armeabi" />
+      <arg value="libs" />
+      <arg value="obj/local" />
+      <arg value="obj" />
+    </exec>
+
+  </target>
+
+</project>

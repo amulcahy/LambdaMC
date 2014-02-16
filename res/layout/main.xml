@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+	android:fastScrollEnabled="false" 
+	android:layout_margin="3dp"
+	android:scrollbars="vertical"
+        android:fillViewport="true" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:typeface="monospace"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </ScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow4" >
+
+            <Button
+	      android:id="@+id/button1"
+	      android:layout_span="1"
+	      android:text="@string/start"
+	      android:onClick="onBtnClk1HS"
+	      ><requestFocus/></Button>
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_span="1"
+                android:text="@string/clear"
+		android:onClick="onBtnClk2HS" />
+
+            <Button
+                android:id="@+id/buttonCopy"
+                android:layout_span="1"
+                android:text="@string/copy"
+		android:onClick="onBtnClk3HS" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_span="1"
+                android:text="@string/help"
+		android:onClick="onBtnClkShowLicense" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_span="1"
+                android:text="@string/optionparams" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_span="1"
+                android:inputType="numberDecimal" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_span="1"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_span="1"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_span="1" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_span="3"
+                android:entries="@array/OptionType" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_span="1"
+                android:text="@string/mcsim" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_span="1"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_span="1"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_span="1"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_span="1" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_span="3"
+                android:entries="@array/StochasticProcess" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6" >
+
+            <TextView
+                android:id="@+id/textViewRate"
+                android:layout_span="1"
+                android:text="@string/rate" />
+
+            <EditText
+                android:id="@+id/editTextRate"
+                android:layout_span="1"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textViewVolatility"
+                android:layout_span="1"
+                android:text="@string/volatility" />
+
+            <EditText
+                android:id="@+id/editTextVolatility"
+                android:layout_span="1"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical" >
+
+  <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:fastScrollEnabled="false" 
+    android:layout_margin="3dp"
+    android:scrollbars="vertical"
+    android:fillViewport="true" >
+
+    <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:shrinkColumns="*"
+      android:stretchColumns="*" >
+
+      <TableRow>
+	<TextView
+	  android:layout_span="2"
+	  android:text="@string/license_content" />
+      </TableRow>
+      <TableRow>
+	<TextView
+	  android:layout_span="1"
+	  android:text="base" />
+	<Button
+	  android:layout_span="1"
+	  android:text="License"
+	  android:tag="base_license"
+	  android:onClick="onBtnClkLicense" />
+      </TableRow>
+      <TableRow>
+	<TextView
+	  android:layout_span="1"
+	  android:text="deepseq" />
+	<Button
+	  android:layout_span="1"
+	  android:text="License"
+	  android:tag="deepseq_license"
+	  android:onClick="onBtnClkLicense" />
+      </TableRow>
+      <TableRow>
+	<TextView
+	  android:layout_span="1"
+	  android:text="foreign-jni" />
+	<Button
+	  android:layout_span="1"
+	  android:text="License"
+	  android:tag="foreign-jni_license"
+	  android:onClick="onBtnClkLicense" />
+      </TableRow>
+      <TableRow>
+	<TextView
+	  android:layout_span="1"
+	  android:text="mtl" />
+	<Button
+	  android:layout_span="1"
+	  android:text="License"
+	  android:tag="mtl_license"
+	  android:onClick="onBtnClkLicense" />
+      </TableRow>
+      <TableRow>
+	<TextView
+	  android:layout_span="1"
+	  android:text="text" />
+	<Button
+	  android:layout_span="1"
+	  android:text="License"
+	  android:tag="text_license"
+	  android:onClick="onBtnClkLicense" />
+      </TableRow>
+      <TableRow>
+	<TextView
+	  android:layout_span="1"
+	  android:text="time" />
+	<Button
+	  android:layout_span="1"
+	  android:text="License"
+	  android:tag="time_license"
+	  android:onClick="onBtnClkLicense" />
+      </TableRow>
+      <TableRow>
+	<TextView
+	  android:layout_span="1"
+	  android:text="transformers" />
+	<Button
+	  android:layout_span="1"
+	  android:text="License"
+	  android:tag="transformers_license"
+	  android:onClick="onBtnClkLicense" />
+      </TableRow>
+    </TableLayout>
+
+  </ScrollView>
+</LinearLayout>
