@@ -10,6 +10,10 @@ Functionality is limited, but it may be a useful reference for anybody developin
 * Background worker thread updates the UI when the calculation is complete.
 * Interaction between various Android UI elements and Haskell code.
 
+Google Play listing:
+https://play.google.com/store/apps/details?id=org.dragongate_technologies
+
+
 Files
 -----
 * LambdaMC.hs           :  Haskell app code
