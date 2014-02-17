@@ -2,7 +2,21 @@ LambdaMC
 ========
 
 A demo Haskell Android app to calculate option prices by Monte Carlo simulation.
-Based on the example at https://github.com/neurocyte/android-haskell-activity
+Based on the example app at https://github.com/neurocyte/android-haskell-activity
+
+Functionality is limited, but it may be a useful reference for anybody developing a Haskell Android app:
+* Android Pause / Resume functionality.
+* Screen Rotation support.
+* Background worker thread updates the UI when the calculation is complete.
+* Interaction between various Android UI elements and Haskell code.
+
+Files
+-----
+* LambdaMC.hs           :  Haskell app code
+* DgAndr.hs             :  Haskell wrapper for various Android library functions
+* DgMath.hs             :  Haskell option pricing code
+* LambdaMC.java         :  Minimal Java code to support the main Activity
+* LicenseActivity.java  :  Java Activity to display license information *need to move more code to Haskell land*
 
 Prerequisites
 -------------

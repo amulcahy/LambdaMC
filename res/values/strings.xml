@@ -27,8 +27,9 @@
 <string name="license_content">
 \n
 \nLambdaMC - a demo Haskell Android app to calculate option prices by Monte Carlo simulation.
+\nBased on the example app at https://github.com/neurocyte/android-haskell-activity
 \n
-\nWeb: https://github.com/amulcahy/LambdaMC
+\nSource code: https://github.com/amulcahy/LambdaMC
 \n
 \nLambdaMC links to the following Haskell packages:
 \n
