@@ -16,7 +16,7 @@ Files
 * DgAndr.hs             :  Haskell wrapper for various Android library functions
 * DgMath.hs             :  Haskell option pricing code
 * LambdaMC.java         :  Minimal Java code to support the main Activity
-* LicenseActivity.java  :  Java Activity to display license information *need to move more code to Haskell land*
+* LicenseActivity.java  :  Java Activity to display license information (need to move more code to Haskell-land)
 
 Prerequisites
 -------------
